@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'php -v'
+                sh 'composer install'
             }
         }
         stage('Test') {
